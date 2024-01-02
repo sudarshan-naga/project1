@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #A{
+            background-image: radial-gradient(circle, red, yellow, green);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+            top:200px;
+        }
+    </style>
+</head>
+<body id="A" align="center" >
+    <div>
+        <h2>Arthamatic Operators</h2>
+        <input type="text" id="FN" placeholder="first number" autofocus ><br>
+        <input type="text" id="SN" placeholder="second number" autofocus><br>
+        <input type="text" id="result" readonly><br>
+        <button onclick="result.value=(+FN.value)+(+SN.value)">+</button>
+        <button onclick="result.value=(-FN.value)-(-SN.value)">-</button>
+        <button onclick="result.value=(FN.value)*(SN.value)">*</button>
+        <button onclick="result.value=(FN.value)/(SN.value)">/</button>
+        <button onclick="result.value=(FN.value)%(SN.value)">%</button>
+    </div>
+
+</body>
+</html>
